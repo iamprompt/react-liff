@@ -1,0 +1,57 @@
+{
+  "name": "@iamprompt/react-liff",
+  "description": "React Provider and Hook for LINE Front-end Framework (LIFF)",
+  "version": "1.0.0",
+  "keywords": [
+    "React",
+    "LIFF",
+    "LINE Front-end Framework",
+    "LINE"
+  ],
+  "homepage": "https://github.com/iamprompt/react-liff",
+  "bugs": {
+    "url": "https://github.com/iamprompt/react-liff/issues",
+    "email": "osissue@iamprompt.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https//github.com/iamprompt/react-liff.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Supakarn Laorattanakul",
+    "email": "opensource@iamprompt.me",
+    "url": "https://github.com/iamprompt"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@iamprompt/eslint-config": "workspace:^",
+    "@line/liff": "^2.23.2",
+    "@types/react": "^18.3.3",
+    "react": "^18.3.1",
+    "tsup": "^8.1.0",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "@line/liff": "^2.23.2",
+    "react": "^18.3.1"
+  }
+}

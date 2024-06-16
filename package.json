@@ -1,0 +1,22 @@
+{
+  "name": "react-liff",
+  "description": "Monorepo for @iamprompt/react-liff",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "dev": "turbo run dev",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint": "turbo run lint"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@9.3.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@iamprompt/eslint-config": "workspace:^",
+    "prettier": "^3.3.2",
+    "turbo": "^2.0.4"
+  }
+}
